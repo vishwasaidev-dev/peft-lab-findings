@@ -1,0 +1,4 @@
+title: PEFT Lab Notes
+description: What a weekend of poking at LoRA adapters with a scalpel taught us about how small language models store facts, guardrails, and personalities.
+theme: jekyll-theme-cayman
+markdown: kramdown
