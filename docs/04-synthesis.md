@@ -37,4 +37,4 @@ The practical upshot: PEFT is a genuinely powerful, cheap lever over both guardr
 
 *All code that produced every number on this site is in [`/code`](https://github.com/vishwasaidev-dev/peft-lab-findings/tree/main/code), numbered in run order. Nothing here required more than a CPU and about 20 minutes, total.*
 
-[← back to index](index.html)
+[← back to index](index.html) · [Next: Does "interference weights" explain the leak? →](05-interference-weights-in-adapters.html)

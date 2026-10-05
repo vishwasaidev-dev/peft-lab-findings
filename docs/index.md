@@ -19,6 +19,7 @@ Everything below is the evidence for that, in order.
 2. **[Teaching and un-teaching guardrails](02-teaching-and-removing-guardrails.html)** — Two small experiments in each direction: making the model refuse something it used to help with, and making it stop refusing something it shouldn't have refused in the first place. Both leak, in opposite directions, unless you feed the training data a contrast to learn from.
 3. **[Personas, and whether you can prompt your way out of one](03-personas-and-forgetting.html)** — Four hand-trained personalities (angel, evil twin, romantic, philosopher), and a test of whether telling the model to "forget your personality" in the prompt actually works against a personality baked into the weights.
 4. **[What this adds up to](04-synthesis.html)** — The synthesis: guardrails vs. knowledge vs. behavior, why they're not different mechanisms, and the one variable that determined success or failure in every single experiment.
+5. **[Does "interference weights" explain the leak?](05-interference-weights-in-adapters.html)** — Applying a 2026 Anthropic interpretability paper's effectiveness/helpfulness framework to our own leaky-vs-fixed adapter pair. The result complicated our hypothesis more than it confirmed it — which turned out to be the more useful finding.
 
 ## Code
 
