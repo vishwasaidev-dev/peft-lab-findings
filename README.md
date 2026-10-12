@@ -33,9 +33,10 @@ python 10_fix_overrefusal.py
 python 11_train_personas.py
 python 12_test_persona_forget.py
 python 13_interference_weights_in_adapter_leaks.py   # needs 07 and 08's adapters first
+python 14_consolidate_context_into_weights.py        # ~35 min: trains two adapters, then evaluates
 ```
 
-Every script is self-contained and reads `LORA_ZOO`/writes its own adapter into it. Total run time on a plain CPU: about 20 minutes across all twelve scripts. No GPU, no cloud account, nothing paid.
+Every script is self-contained and reads `LORA_ZOO`/writes its own adapter into it. Total run time on a plain CPU: about 20 minutes for scripts 00–12; 13 and 14 add roughly 15 and 35 minutes. No GPU, no cloud account, nothing paid.
 
 ## License
 

@@ -5,7 +5,7 @@ layout: default
 
 # PEFT Lab Notes
 
-Everything here was run on a single 0.5-billion-parameter model (`Qwen/Qwen2.5-0.5B-Instruct`), on an ordinary CPU, over the course of one long sitting. No training run took more than a couple of minutes. The point wasn't to build anything — it was to answer a question with actual weights and actual generations instead of assertions: **when you fine-tune a small piece of a language model with LoRA, what is it really doing?**
+Everything here was run on a single 0.5-billion-parameter model (`Qwen/Qwen2.5-0.5B-Instruct`), on an ordinary CPU, over the course of one long sitting. Most training runs took a couple of minutes; the largest (page 6) took under 20. The point wasn't to build anything — it was to answer a question with actual weights and actual generations instead of assertions: **when you fine-tune a small piece of a language model with LoRA, what is it really doing?**
 
 Is it storing a fact somewhere findable? Is a "guardrail" (a refusal, a restriction) stored the same way a fact is? Can you scope a change precisely, or does it always leak? Can you talk a model out of a personality that's been trained into its weights, or only out of one that's just in the prompt?
 
@@ -20,6 +20,7 @@ Everything below is the evidence for that, in order.
 3. **[Personas, and whether you can prompt your way out of one](03-personas-and-forgetting.html)** — Four hand-trained personalities (angel, evil twin, romantic, philosopher), and a test of whether telling the model to "forget your personality" in the prompt actually works against a personality baked into the weights.
 4. **[What this adds up to](04-synthesis.html)** — The synthesis: guardrails vs. knowledge vs. behavior, why they're not different mechanisms, and the one variable that determined success or failure in every single experiment.
 5. **[Does "interference weights" explain the leak?](05-interference-weights-in-adapters.html)** — Applying a 2026 Anthropic interpretability paper's effectiveness/helpfulness framework to our own leaky-vs-fixed adapter pair. The result complicated our hypothesis more than it confirmed it — which turned out to be the more useful finding.
+6. **[Can approved memory move into the weights?](06-consolidating-context-into-weights.html)** — Taking admin-approved claims out of a chat app's memory file and training them into an adapter. Weights install a counterfactual that context couldn't, but they memorize one direction, leak without contrast, turn rules into keywords, and can't be revoked by editing the memory file.
 
 ## Code
 
